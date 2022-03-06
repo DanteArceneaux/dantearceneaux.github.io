@@ -25,10 +25,10 @@ closeMenu.addEventListener("click", () => {
 	gsap.to(".hero-content button", { x: 0, duration: 2, opacity: 1 });
 });
 
-$("h1").blast({
-	delimiter: "character",
-	customClass: "alpha",
-});
+// $("h1").blast({
+// 	delimiter: "character",
+// 	customClass: "alpha",
+// });
 
 gsap.registerPlugin(ScrollTrigger);
 
