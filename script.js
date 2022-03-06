@@ -80,7 +80,6 @@ gsap.from(".about-section img", {
 		trigger: ".about-section",
 		start: "top 90%",
 		end: "bottom 30%",
-		scrub: 2,
 	},
 });
 gsap.to(".about-section img", {
@@ -90,7 +89,6 @@ gsap.to(".about-section img", {
 		trigger: ".about-section",
 		start: "top 90%",
 		end: "bottom 30%",
-		scrub: 2,
 	},
 });
 
@@ -101,7 +99,6 @@ gsap.from(".about-section div", {
 		trigger: ".about-section",
 		start: "top 90%",
 		end: "bottom 30%",
-		scrub: 2,
 	},
 });
 gsap.to(".about-section div", {
@@ -111,7 +108,7 @@ gsap.to(".about-section div", {
 		trigger: ".about-section",
 		start: "top 90%",
 		end: "bottom 10%",
-		scrub: 2,
+
 		markers: false,
 	},
 });
