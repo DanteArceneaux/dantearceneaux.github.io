@@ -34,8 +34,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".blast", { x: 400, opacity: 0 });
 gsap.to(".blast", { x: 0, duration: 2, opacity: 1 });
-gsap.from(".hero-content h1", { duration: 2, ease: "none", x: -500 });
-gsap.from(".hero-content p", { duration: 2, ease: "none", y: -500 });
+gsap.from(".hero-content h1", { duration: 2, ease: "none", x: -200 });
+gsap.from(".hero-content p", { duration: 2, ease: "none", y: -200 });
 gsap.from(".hero-content button", { x: 0, duration: 2, opacity: 0 });
 gsap.to(".hero-content button", { x: 0, duration: 2, opacity: 1 });
 
@@ -47,6 +47,17 @@ gsap.to("nav", {
 		toggleClass: {
 			targets: "nav",
 			className: "scrolled",
+		},
+	},
+});
+gsap.to(".main-menu", {
+	scrollTrigger: {
+		trigger: ".about-section",
+		start: 800,
+		scrub: 2,
+		toggleClass: {
+			targets: "ul",
+			className: "main-menu-scrolled",
 		},
 	},
 });
@@ -82,15 +93,7 @@ gsap.from(".about-section img", {
 		end: "bottom 30%",
 	},
 });
-gsap.to(".about-section img", {
-	x: 10,
-	duration: 2,
-	scrollTrigger: {
-		trigger: ".about-section",
-		start: "top 90%",
-		end: "bottom 30%",
-	},
-});
+
 
 gsap.from(".about-section div", {
 	x: 100,
